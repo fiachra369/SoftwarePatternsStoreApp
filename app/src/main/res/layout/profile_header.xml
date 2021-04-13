@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/header_profile_image_margin_bottom"
+        android:layout_marginTop="@dimen/header_profile_image_margin_top"
+        android:contentDescription="@string/content_description_user_profile_image"
+        app:layout_constraintBottom_toTopOf="@+id/profileNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/profileHeaderBackground"
+        app:layout_constraintTop_toTopOf="@+id/profileHeaderBackground"
+        app:layout_constraintVertical_bias="0.783"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/profileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000"
+        android:textSize="@dimen/header_profile_name_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/profileEmailTextView"
+        app:layout_constraintStart_toStartOf="@+id/profileHeaderBackground"
+        tools:text="@string/label_user_name" />
+
+    <TextView
+        android:id="@+id/profileEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000"
+        android:textSize="@dimen/header_profile_email_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/profileHeaderBackground"
+        app:layout_constraintStart_toStartOf="@+id/profileHeaderBackground"
+        tools:text="@string/label_user_email" />
+</LinearLayout>

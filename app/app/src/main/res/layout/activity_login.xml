@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.LoginActivity">
+
+        <ImageView
+            android:id="@+id/loginImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_image_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_activity_label_margin_top"
+            android:background="@drawable/register_background"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="@dimen/login_activity_label_padding_bottom"
+            android:paddingEnd="@dimen/login_activity_label_margin_end"
+            android:paddingStart="@dimen/login_activity_label_margin_start"
+            android:paddingTop="@dimen/login_activity_label_padding"
+            android:text="@string/login_activity_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/login_activity_label_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginImage" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/login_activity_email_layout_margin_end"
+            android:layout_marginStart="@dimen/login_activity_email_layout_margin_start"
+            android:layout_marginTop="@dimen/login_activity_email_layout_margin_top"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginLabel">
+
+            <EditText
+                android:id="@+id/loginEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_activity_email_edittext_height"
+                android:background="@drawable/rounded_edittext"
+                android:drawablePadding="4dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:ems="10"
+                android:gravity="start|center"
+                android:hint="@string/register_email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="4dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPasswordTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/login_activity_password_layout_margin_end"
+            android:layout_marginStart="@dimen/login_activity_password_layout_margin_start"
+            android:layout_marginTop="@dimen/login_activity_password_layout_margin_top"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextLayout"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/loginPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:drawablePadding="@dimen/register_activity_email_drawable_padding"
+                android:drawableStart="@drawable/ic_lock"
+                android:ems="10"
+                android:hint="@string/register_password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/register_activity_email_padding" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/login_activity_login_button_margin_end"
+            android:layout_marginStart="@dimen/login_activity_login_button_margin_start"
+            android:layout_marginTop="@dimen/login_activity_login_button_margin_top"
+            android:background="@drawable/sigup_button"
+            android:text="@string/login_activity_login_button_label"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginPasswordTextLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

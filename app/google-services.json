@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262336497118",
+    "project_id": "softwarepatternsca-92d65",
+    "storage_bucket": "softwarepatternsca-92d65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262336497118:android:cd13e6e2d9a5d838c9894f",
+        "android_client_info": {
+          "package_name": "electric.ecomm.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262336497118-i0t79cf2prdq88isk8ovkhpce1ao9cdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyaEqMwCtgCKLIEYyqBjJD-PDFVhDNp2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262336497118-i0t79cf2prdq88isk8ovkhpce1ao9cdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

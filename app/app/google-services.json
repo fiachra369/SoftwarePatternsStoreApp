@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "105956809650",
+    "firebase_url": "https://ecommerce-fiverr-default-rtdb.firebaseio.com",
+    "project_id": "ecommerce-fiverr",
+    "storage_bucket": "ecommerce-fiverr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105956809650:android:48a219bd970b1d57a8e2ab",
+        "android_client_info": {
+          "package_name": "elamien.abdullah.shopemall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105956809650-h8jhpa35tgnt01v1ullo51js8g0t7g9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAQdXumpr0RQelrAlobo0VzXYwSHPDNPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105956809650-h8jhpa35tgnt01v1ullo51js8g0t7g9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105956809650:android:b00745780a8d2673a8e2ab",
+        "android_client_info": {
+          "package_name": "electric.ecomm.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105956809650-h8jhpa35tgnt01v1ullo51js8g0t7g9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAQdXumpr0RQelrAlobo0VzXYwSHPDNPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105956809650-h8jhpa35tgnt01v1ullo51js8g0t7g9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
