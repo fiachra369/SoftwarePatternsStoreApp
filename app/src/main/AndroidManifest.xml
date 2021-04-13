@@ -9,12 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ProductDetailsActivity"></activity>
-        <activity android:name=".activities.CartActivity" />
-        <activity android:name=".activities.UserOrdersActivity" />
+
+        <activity android:name=".activities.AddProductActivity" />
+        <activity
+            android:name=".activities.AdminCategoryProductsActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:parentActivityName=".activities.MainAdminActivity"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".activities.AddCategoryActivity" />
-        <activity android:name=".activities.AdminCategoryProductsActivity" />
-        <activity android:name=".activities.CategoryProductsActivity" />
+        <activity
+            android:name=".activities.MainAdminActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:parentActivityName=".activities.RegisterActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activities.CategoryProductsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activities.ProductDetailsActivity"
+            android:noHistory="true"
+            android:parentActivityName=".activities.CategoryProductsActivity" />
+        <activity
+            android:name=".activities.CartActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activities.SearchableActivity"
+            android:parentActivityName=".activities.CategoryProductsActivity" />
+        <activity
+            android:name=".activities.UserOrdersActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -29,18 +64,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.MainAdminActivity"
-            android:launchMode="singleTop"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".activities.LoginActivity"
-            android:parentActivityName=".activities.RegisterActivity"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".activities.MainActivity"
-            android:launchMode="singleTop"
-            android:theme="@style/NoActionBar" />
     </application>
 
 </manifest>
