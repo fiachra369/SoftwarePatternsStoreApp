@@ -9,14 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.OrderAdminActivity"></activity>
         <activity
             android:name=".activities.OrderDetailsActivity"
             android:parentActivityName=".activities.UserOrdersActivity" />
-
         <activity
             android:name=".activities.OrderActivity"
             android:parentActivityName=".activities.CartActivity" />
-
         <activity android:name=".activities.ReviewActivity" />
         <activity android:name=".activities.AddProductActivity" />
         <activity
